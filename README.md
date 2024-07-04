@@ -4,7 +4,7 @@ A lightweight, intuitive, Pythonic dependency injection framework.
 
 Highlights:
 
-* :mushroom: Micro framework with very little over head - single file implementation and handful of public API methods.
+* :mushroom: Micro framework with very little overhead - single file implementation and handful of public API methods.
 * :snake: Compliant with latest Python 3.x versions
 * :full_moon: Unit-tests cover all core functionality
 
