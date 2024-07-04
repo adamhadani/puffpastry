@@ -4,6 +4,8 @@ from os import getenv
 from dotenv import load_dotenv
 
 
+__all__ = ["create", "provides"]
+
 DEFAULT_DOTENV_PATH = ".env"
 
 _APP = None
@@ -57,13 +59,15 @@ class Application:
 
 
 
-def create(identifier: str):
+def create(identifier: str, force: bool = True):
     """Create an application namespace associated with given identifier."""
     global _APP
-    if _APP is not None:
+    if _APP is not None and force is False:
         raise KeyError(f"Application object already initialized.")
 
     _APP = Application(identifier)
+    _REGISTRY = dict()
+    _CACHE = dict()
 
     return _APP   
 
