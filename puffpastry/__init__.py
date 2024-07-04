@@ -1,8 +1,10 @@
 from functools import wraps
 from os import getenv
 
-import dotenv
+from dotenv import load_dotenv
 
+
+DEFAULT_DOTENV_PATH = ".env"
 
 _APP = None
 _REGISTRY = dict()
@@ -15,8 +17,8 @@ class DotEnvConfig:
     environment variables and/or .env files.
     
     """
-    def __init__(self):
-        dotenv.load_dotenv()
+    def __init__(self, path=DEFAULT_DOTENV_PATH):
+        load_dotenv(path)
 
     def __getattr__(self, name):
         return getenv(name.upper())
