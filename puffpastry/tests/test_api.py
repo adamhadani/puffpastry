@@ -16,7 +16,7 @@ def test_provides_and_load():
     def create_component(app):
         obj = cls()
         return obj
-    
+
     app = create("test_app").load("my_component")
 
     assert isinstance(app, Application)
