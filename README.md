@@ -1,4 +1,4 @@
-# puffpastry
+# :bread: puffpastry
 
 A lightweight, intuitive, Pythonic dependency injection framework.
 
