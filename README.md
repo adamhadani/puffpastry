@@ -1,3 +1,5 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/adamhadani/puffpastry/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/adamhadani/puffpastry/tree/main)
+
 # :bread: puffpastry
 
 A lightweight, intuitive, Pythonic dependency injection framework.
