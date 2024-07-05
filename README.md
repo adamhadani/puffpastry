@@ -39,7 +39,8 @@ def fastapi_provider(app):
 
 @provides("ipify_client")
 def ipify_client(app):
-    # The base url will be read from IPIFY_BASE_URL env variable or .env file
+    # The base url will be read from IPIFY_BASE_URL env variable or .env file.
+    # To run this example set this value to 'https://api.ipify.org'
     return IpifyClient(base_url=app.config.ipify_base_url)
 
 
