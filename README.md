@@ -6,9 +6,9 @@ A lightweight, intuitive, Pythonic dependency injection framework.
 
 Highlights:
 
-* :mushroom: Micro framework with very little overhead - single file implementation and handful of public API methods.
-* :snake: Compliant with latest Python 3.x versions
-* :full_moon: Unit-tests cover all core functionality
+* :mushroom: Micro framework with very little overhead - single file implementation and handful of public API methods, minimal third-party package requirements.
+* :full_moon: Unit-tests cover all core functionality, [ruff](https://docs.astral.sh/ruff/) and [pre-commit](https://pre-commit.com/) used to ensure codebase health.
+* :snake: Compliant with latest Python 3.x version
 
 ## Getting Started
 
